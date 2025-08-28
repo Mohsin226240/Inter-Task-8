@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Front-End Developer</title>
+    <meta name="description" content="Professional front-end developer portfolio: skills, projects, and contact.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="header" id="top">
+        <nav class="nav container" aria-label="Primary">
+            <a href="#hero" class="logo" aria-label="Home">&lt;Dev /&gt;</a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="#about" data-scroll>About</a></li>
+                <li><a href="#skills" data-scroll>Skills</a></li>
+                <li><a href="#projects" data-scroll>Projects</a></li>
+                <li><a href="#contact" data-scroll>Contact</a></li>
+                <li>
+                    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+                        <span class="sun" aria-hidden="true">☀️</span>
+                        <span class="moon" aria-hidden="true">🌙</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero -->
+        <section id="hero" class="section hero">
+            <div class="container grid-2">
+                <div class="hero-text" data-animate>
+                    <p class="eyebrow">Hi, I'm</p>
+                    <h1 class="title">Mohsin Shahzad</h1>
+                    <p class="subtitle">Front-End Developer</p>
+                    <p class="lead">I craft fast, accessible, and delightful web experiences using modern technologies.</p>
+                    <div class="hero-cta">
+                        <a class="btn primary" href="#contact" data-scroll>Contact Me</a>
+                        <a class="btn secondary" href="#projects" data-scroll>See Projects</a>
+                    </div>
+                </div>
+                <div class="hero-media" data-animate>
+                    <div class="avatar" role="img" aria-label="Profile image">
+                        <img src="https://t3.ftcdn.net/jpg/03/32/58/88/360_F_332588811_bYNAWoxbBHaAvIFfHNKk71OZrNBlzAVQ.jpg" alt="Portrait of developer">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section about">
+            <div class="container grid-2">
+                <div class="about-media" data-animate>
+                    <img class="about-img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=900&auto=format&fit=crop" alt="Working at a desk">
+                </div>
+                <div class="about-text" data-animate>
+                    <h2>About Me</h2>
+                    <p>I’m a front-end developer with a passion for building performant, accessible, and engaging interfaces. I enjoy turning complex problems into intuitive solutions and polishing details that make products delightful.</p>
+                    <p>When I’m not coding, you’ll find me learning new technologies, sketching UI ideas, or hiking.</p>
+                    <ul class="about-highlights">
+                        <li>3+ years building responsive apps</li>
+                        <li>Accessibility-first mindset (WCAG)</li>
+                        <li>Pixel-perfect implementation from Figma</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section skills">
+            <div class="container" data-animate>
+                <h2>Skills</h2>
+                <p class="section-lead">Tools and technologies I work with</p>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-head">
+                            <span class="skill-icon">🧩</span>
+                            <h3>Core</h3>
+                        </div>
+                        <ul class="badges">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>TypeScript</li>
+                            <li>Accessibility (a11y)</li>
+                        </ul>
+                        <div class="progress" aria-label="Core proficiency">
+                            <span style="width: 90%"></span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-head">
+                            <span class="skill-icon">🎨</span>
+                            <h3>UI</h3>
+                        </div>
+                        <ul class="badges">
+                            <li>Flexbox</li>
+                            <li>Grid</li>
+                            <li>Responsive Design</li>
+                            <li>Animations</li>
+                            <li>Figma</li>
+                        </ul>
+                        <div class="progress" aria-label="UI proficiency">
+                            <span style="width: 85%"></span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-head">
+                            <span class="skill-icon">⚙️</span>
+                            <h3>Frameworks</h3>
+                        </div>
+                        <ul class="badges">
+                            <li>React</li>
+                            <li>Next.js</li>
+                            <li>Redux / Zustand</li>
+                            <li>Tailwind / SCSS</li>
+                            <li>Vite</li>
+                        </ul>
+                        <div class="progress" aria-label="Frameworks proficiency">
+                            <span style="width: 80%"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section projects">
+            <div class="container" data-animate>
+                <div class="projects-head">
+                    <div>
+                        <h2>Projects</h2>
+                        <p class="section-lead">A selection of my recent work</p>
+                    </div>
+                    <div class="filters" role="tablist" aria-label="Project filters">
+                        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+                        <button class="filter-btn" data-filter="web" role="tab">Web</button>
+                        <button class="filter-btn" data-filter="app" role="tab">App</button>
+                        <button class="filter-btn" data-filter="ui" role="tab">UI</button>
+                    </div>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card" data-type="web" tabindex="0">
+                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop" alt="Dashboard app screenshot">
+                        <div class="project-content">
+                            <h3>Analytics Dashboard</h3>
+                            <p>Responsive admin dashboard with charts and dark mode.</p>
+                            <div class="actions">
+                                <a href="#" class="btn small tertiary" data-modal-open data-project="dashboard">Details</a>
+                                <a href="https://github.com/" target="_blank" rel="noopener" class="link">GitHub →</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card" data-type="app" tabindex="0">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop" alt="Mobile app UI">
+                        <div class="project-content">
+                            <h3>Task Manager</h3>
+                            <p>PWA task app with offline sync and drag-and-drop.</p>
+                            <div class="actions">
+                                <a href="#" class="btn small tertiary" data-modal-open data-project="tasks">Details</a>
+                                <a href="https://example.com" target="_blank" rel="noopener" class="link">Demo →</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card" data-type="ui" tabindex="0">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="UI component library">
+                        <div class="project-content">
+                            <h3>UI Component Kit</h3>
+                            <p>Accessible component library with theming and docs.</p>
+                            <div class="actions">
+                                <a href="#" class="btn small tertiary" data-modal-open data-project="uikit">Details</a>
+                                <a href="https://github.com/" target="_blank" rel="noopener" class="link">GitHub →</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section contact">
+            <div class="container grid-2">
+                <div class="contact-text" data-animate>
+                    <h2>Contact</h2>
+                    <p class="section-lead">Have a question or want to work together?</p>
+                    <ul class="socials">
+                        <li><a href="mailto:you@example.com" class="link">you@example.com</a></li>
+                        <li><a href="https://www.linkedin.com" target="_blank" rel="noopener" class="link">LinkedIn</a></li>
+                        <li><a href="https://github.com" target="_blank" rel="noopener" class="link">GitHub</a></li>
+                        <li><a href="https://twitter.com" target="_blank" rel="noopener" class="link">Twitter</a></li>
+                    </ul>
+                </div>
+                <form class="contact-form" data-animate netlify>
+                    <input type="hidden" name="form-name" value="contact" />
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" placeholder="Your name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Hi, I'd like to..." required></textarea>
+                    </div>
+                    <button class="btn primary" type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+            <a href="#top" class="link" data-scroll>Back to top ↑</a>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="false" aria-labelledby="modalTitle">
+        <div class="modal-backdrop" data-modal-close></div>
+        <div class="modal-dialog" role="document">
+            <button class="modal-close" aria-label="Close" data-modal-close>×</button>
+            <div class="modal-body">
+                <h3 id="modalTitle">Project Title</h3>
+                <p id="modalDesc">Project details will appear here.</p>
+                <a id="modalLink" href="#" target="_blank" rel="noopener" class="btn secondary">Open Link</a>
+            </div>
+        </div>
+    </div>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
